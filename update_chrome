@@ -1,0 +1,33 @@
+#!/bin/bash
+
+set -e;
+
+SOURCE_DIR="${HOME}/Downloads/programs/"
+
+echo "$(tput setaf 3)********************$(tput sgr0)"
+echo "$(tput setaf 3)Check if files exist$(tput sgr0)"
+echo "$(tput setaf 3)********************$(tput sgr0)"
+echo
+
+if [ -f ${SOURCE_DIR}/chrome-linux.zip  ]; then
+  echo "$(tput setaf 2)Files exist$(tput sgr0)"
+
+  rm ${SOURCE_DIR}/chrome-linux.zip
+  rm -rf ${SOURCE_DIR}/chrome-linux
+
+  echo "$(tput setaf 2)Files remved$(tput sgr0)"
+  echo
+
+fi
+
+echo "$(tput setaf 2)Start downloading update from https://download-chromium.appspot.com/ $(tput sgr0)"
+echo
+
+wget -O ${SOURCE_DIR}chrome-linux.zip https://download-chromium.appspot.com/dl/Linux_x64?type=snapshots
+
+echo "$(tput setaf 2)Download finished extracting $(tput sgr0)"
+echo
+
+unzip ${SOURCE_DIR}chrome-linux.zip -d ${SOURCE_DIR}
+
+echo "$(tput setaf 2)Extracted, ready to work $(tput sgr0)"

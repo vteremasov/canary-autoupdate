@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -e
+
+START_FILE="${HOME}/Downloads/programs/chrome-linux/chrome"
+CONFIG_FILE="${HOME}/.config/chromium-canary"
+
+$START_FILE --user-data-dir="~/.config/chromium-canary" &
