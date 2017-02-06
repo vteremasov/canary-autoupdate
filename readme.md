@@ -6,7 +6,7 @@ Chrome canary for linux
 
 *How to use*
 
- * Clone this repo and open in terminal its directory
+ * Clone this repo and open in terminal it's directory
  * Run `chmod +x update_chrome` and `chmod +x chrome`
  * Run `./update_chrome` it will download the last version of chromium to `~/Downloads/programs/linux-chrome.zip` and extract files
  * Then run `./chrome`
