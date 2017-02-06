@@ -1,5 +1,7 @@
 
 
+Chrome canary for linux
+
 **This scripts auto update chromium for linux to the last version**
 
 *How to use*
